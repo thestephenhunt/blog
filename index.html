@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Hunt</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            gap: 1rem;
+
+            img {
+                height: 2rem;
+            }
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-family: sans-serif;
+        }
+        p {
+            max-width: 70ch;
+            margin: 0 0 1rem 0;
+
+            a {
+                color: #d29bff;
+            }
+        }
+        footer {
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 1rem 0 .5rem 0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #f3f3f3;
+            }
+            nav ul img:not([src*="bluesky"]) {
+                filter: invert(1);
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 22px;
+                line-height: 28px;
+                padding: 0 .5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://github.com/stephenhunt/blog" target="_blank">
+                        <img src="assets/github-mark.svg" alt="GitHub (opens in new tab)" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bsky.app/profile/stephenhunt.me" target="_blank">
+                        <img src="assets/bluesky-logo.svg" alt="Bluesky (opens in new tab)" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Embark</h1>
+            <p>Following many changes in my career over the past couple of years, I've spent time reflecting on my journey and envisioning where the future will take me. I'm embarking on a new journey. I will be using this blog to document my journey, and share the framework I am developing. My goal is to build a simple straightforward framework as a personal learning experience. </p>
+
+            <p>When I started out I imagined I would end up in web design. I have always loved art. In high school I took the maximum amount of art classes permitted. Then, I started college as a graphic design major. I drew, I painted, I doodled. I did all right things to prepare me for the art world. But, college, as it turns out, requires immense effort and discipline. While, I didn't know it at the time, I was suffering from undiagnosed ADHD which, along with my first tastes of freedom, made it nearly impossible to be successful in an academic environment.</p>
+
+            <p>I found myself on academic probation. And eventually left college.</p>
+
+            <p>At 20 years old, I had no idea what to do with my life. I moved back home, got a retail job, and shelved my art tools. I spent the next 2 years drifting around the retail and customer service industries with little direction or focus on art. I was coasting.</p>
+
+            <p>One summer day a friend called and says, "You think you could do software testing?"</p>
+
+            <p>With zero experience, but no better offers, I said "sure?"</p>
+
+            <p>Soon I was interviewing at his app development employer. I had no idea what to expect, but somehow managed to work though a solution to the problem they presented.</p> 
+            
+            <p>I was hired. With no other QA staff, I got to blaze a trail. Soon, I picked up some C# and conneced with other developers from app space and the web space. For the next nine months, I was a QA tester. I learned  everything I could about software development. </p>
+
+            <p>Family obligations brought a cross country move to Texas. But as luck would have it, I got an interview with a friend of a friend, who owned a web development company. My time as a QA tester only translated to slightly improved problem solving skills. At the time of my interview, I only knew some HTML and CSS from high school. Amazingly, they also hired me.</p>
+
+            <p>I started web development using Wordpress. For two and a half years, I learned everything I could on the job. I grew enough, that I was able to get into another company as a junior developer doing Ruby on Rails. Then, it was Angular. Then React and Node. Then Vue and GraphQL. And now, I'm leading a frontend team.</p>
+
+            <p>But, I've never had a website. I've had portfolio sites. Just ephemeral pages that lasted as long as I was in the job market. But never a personal site.</p>
+
+            <p>Which brings us to my current goals. I have been wanting to build my own site and get into blogging for a while. The plan is this:</p>
+
+            <ul>
+                <li>Blog mainly about development, potentially incoroprate other things along the way.</li>
+                <li>Progressively build this site from scratch.</li>
+                <li>Learn as much as I can.</li>    
+            </ul>
+
+            <p>You may notice this site looks pretty plain. It's a single HTML file with boring colors and system fonts [except the icons, shhh...] It's nothing fancy yet. But, with each blog post will come upgrades to the site. I intend to build a micro framework. As I develop it, I'll do my best to adhere to the minimal amount of code needed to accomplish the the task. I want to keep things as simple as possible, but as close to the "trinity" as possible.</p>
+               
+            <p>To be clear, I'm building this framework for fun. I'm not trying to replace or contend with any of the existing options out there. I'm just trying to make something that works for me. If others find it useful, that's cool.</p>
+
+            <p>The entire site will be <a href="https://github.com/stephenhunt/blog" target="_blank">open source</a>. I've never built a framework from the ground up, so this should be fun. Feel free to post issues or feedback on the repo.</p>
+
+            <p>If you made it this far, thank you for reading. I'm excited for this new journey.</p>
+
+            <p>-Stephen</p>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 Stephen Hunt</p>
+    </footer>
+</body>
+</html>
